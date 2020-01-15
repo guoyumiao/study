@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.yumiao</groupId>
+	<artifactId>thermal_deployment</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	
+	<!-- maven 集成Tomcat插件本地部署 -->
+	<!-- <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<configuration>
+					<port>9999</port>
+					<path>/abc</path>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build> -->
+	
+	
+	<!-- 远程部署Tomcat7 -->
+	<!-- <build>
+		<plugins>
+			配置Tomcat插件
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<configuration>
+					部署到yumiao目录下,即访问地址为：http://localhost:8080/yumiao
+					<path>/yumiao</path>
+					tomcat的地址和端口，manager/text是固定的
+					<url>http://127.0.0.1:8080/manager/text</url>
+					<username>yumiao</username>
+					<password>123.com</password>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build> -->
+	
+
+
+</project>
